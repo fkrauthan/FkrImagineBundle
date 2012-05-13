@@ -4,6 +4,6 @@ namespace Fkr\ImagineBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class FkrImagineBundleBundle extends Bundle
+class FkrImagineBundle extends Bundle
 {
 }
