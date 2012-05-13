@@ -63,9 +63,11 @@ Configuration
 
 
 * driver: sets the driver which Imagine should use
-** gd (default) Use GD
-** imagick Use IMagick
-** gmagick Use GMagick
+
+**Allowed drivers:**
+* gd (default) Use GD
+* imagick Use IMagick
+* gmagick Use GMagick
 
 
 Usage
