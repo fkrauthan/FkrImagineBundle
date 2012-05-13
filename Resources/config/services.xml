@@ -11,7 +11,7 @@
     </parameters>
 
     <services>
-        <service id="fkr_imagine" class="SimplePie_Core" factory-class="%fkr_imagine.factory%" factory-method="create">
+        <service id="fkr_imagine" class="Imagine" factory-class="%fkr_imagine.factory%" factory-method="create">
 			<argument>%fkr_imagine.driver%</argument>
         </service>
     </services>

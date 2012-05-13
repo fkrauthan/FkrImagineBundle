@@ -1,5 +1,5 @@
 <?php
-	namespace Fkr\SimplePieBundle\DependencyInjection;
+	namespace Fkr\ImagineBundle\DependencyInjection;
 
 	use Symfony\Component\DependencyInjection\ContainerBuilder;
 	use Symfony\Component\Config\FileLocator;
@@ -12,7 +12,7 @@
 	 *
 	 * To learn more see {@link http://symfony.com/doc/current/cookbook/bundles/extension.html}
 	 */
-	class FkrSimplePieExtension extends Extension {
+	class FkrImagineExtension extends Extension {
 		/**
 		 * {@inheritDoc}
 		 */
@@ -23,8 +23,6 @@
 			$loader = new Loader\XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
 			$loader->load('services.xml');
 			
-			$container->setParameter('fkr_simple_pie.cache_enabled', $config['cache_enabled']);
-			$container->setParameter('fkr_simple_pie.cache_dir', $config['cache_dir']);
-			$container->setParameter('fkr_simple_pie.cache_duration', $config['cache_duration']);
+			$container->setParameter('fkr_imagine.driver', $config['driver']);
 		}
 	}

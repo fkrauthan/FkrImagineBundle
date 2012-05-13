@@ -1,6 +1,6 @@
 <?php
 
-namespace Fkr\SimplePieBundle\DependencyInjection;
+namespace Fkr\ImagineBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -22,9 +22,7 @@ class Configuration implements ConfigurationInterface
 
         $rootNode
 			->children()
-				->booleanNode('cache_enabled')->defaultFalse()->end()
-				->scalarNode('cache_dir')->defaultValue('%kernel.cache_dir%/rss')->end()
-				->scalarNode('cache_duration')->defaultValue('3600')->end()
+				->scalarNode('driver')->defaultValue('gd')->end()
 			->end();
 
         return $treeBuilder;
