@@ -9,9 +9,22 @@ Installation
 Bring in the vendor libraries
 -----------------------------
 
-This can be done in two different ways:
+This can be done in three different ways:
 
-**Method #1**) Use deps file
+**Method #1**) Use composer
+
+    "require": {
+        "fkr/imagine-bundle": "*"
+    }
+
+
+**Method #2**) Use git submodules
+
+    git submodule add git://github.com/avalanche123/Imagine.git vendor/imagine
+    git submodule add git://github.com/fkrauthan/FkrImagineBundle.git vendor/bundles/Fkr/ImagineBundle
+
+
+**Method #3**) Use deps file
 	
 	[Imagine]
 	    git=git://github.com/avalanche123/Imagine.git
@@ -21,12 +34,6 @@ This can be done in two different ways:
 	[FkrImagineBundle]
 	    git=git://github.com/fkrauthan/FkrImagineBundle.git
 		target=bundles/Fkr/ImagineBundle
-
-
-**Method #2**) Use git submodules
-
-    git submodule add git://github.com/avalanche123/Imagine.git vendor/imagine
-    git submodule add git://github.com/fkrauthan/FkrImagineBundle.git vendor/bundles/Fkr/ImagineBundle
 
 
 Register the Imagine and Fkr namespaces
