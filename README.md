@@ -91,4 +91,4 @@ Thats all. For the complete api visit the [Imagine api doc](http://imagine.readt
 Licence
 =======
 
-[Resources/meta/LICENSE](https://github.com/fkrauthan/FkrSimplePieBundle/blob/master/Resources/meta/LICENSE)
+[Resources/meta/LICENSE](https://github.com/fkrauthan/FkrImagineBundle/blob/master/Resources/meta/LICENSE)
