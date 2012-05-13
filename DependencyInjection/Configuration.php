@@ -18,7 +18,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('fkr_simple_pie');
+        $rootNode = $treeBuilder->root('fkr_imagine');
 
         $rootNode
 			->children()
