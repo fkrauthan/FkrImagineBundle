@@ -2,7 +2,7 @@
 	"name": "fkr/imagine-bundle",
 	"type": "symfony-bundle",
 	"description": "Integrates Imagine into Symfony2",
-	"keywords": ["Imagine"],
+	"keywords": ["Imagine", "Symfony Bundle", "Image", "Image transform"],
 	"homepage": "https://github.com/fkrauthan/FkrImagineBundle",
 	"license": "MIT",
 	"authors": [
