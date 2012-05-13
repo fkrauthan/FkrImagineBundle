@@ -10,13 +10,13 @@
 			$driver = strtolower($driver);
 			
 			if($driver=='gd') {
-				return new Imagine\Gd\Imagine();
+				return new \Imagine\Gd\Imagine();
 			}
 			else if($driver=='imagick') {
-				return new Imagine\Imagick\Imagine();
+				return new \Imagine\Imagick\Imagine();
 			}
 			else if($driver=='gmagick') {
-				return new Imagine\Gmagick\Imagine();
+				return new \Imagine\Gmagick\Imagine();
 			}
 			
 			return null;
